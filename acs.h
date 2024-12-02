@@ -8,6 +8,7 @@ int acs_alog(int a, int b);
 long long acs_big_alog(long long a, long long b);
 
 char* acs_add(char *a, char *b);
+char* acs_substr(char *a, int start, int end);
 void acs_creplace(char *v, char a, char b);
 // char* acs_sreplace(char *v, char *a, char *b);
 char* acs_printint(int a);

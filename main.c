@@ -34,4 +34,5 @@ int main(int argc, char** argv) {
     t2(argv);
     printf("print big number: %s\n", acs_toobig_printint(0x1000000000000000ULL));
     printf("print negative number: %s\n", acs_printint(-2));
+    printf("substr test: \"%s\"\n", acs_substr("Hello, world", 7, 12));
 }

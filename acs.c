@@ -27,6 +27,20 @@ char *acs_add(char *a, char *b)
     return o;
 }
 
+char *acs_substr(char *a, int start, int end)
+{   /*
+       a        start       end
+       |          |          |
+       0  1   2   3  4   5   6
+       
+       returns 3,4,5 from a
+    */
+    char *b = malloc(end-start+1);
+    memcpy(b, a+start, end-start);
+    b[end-start] = 0;
+    return b;
+}
+
 void acs_creplace(char *v, char a, char b) {
     int s = strlen(v);
     for (int i = 0; i < s; i++) {
