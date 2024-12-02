@@ -24,6 +24,7 @@ struct acs_spliter {
 };
 typedef struct acs_spliter acs_spliter;
 acs_spliter* acs_spliter_init(char* str);
+void acs_spliter_free(acs_spliter* self);
 char* acs_spliter_char(acs_spliter* self, char split);
 char* acs_spliter_string(acs_spliter* self, char *split);
 char* acs_milloc(char *str);

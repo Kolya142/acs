@@ -120,6 +120,11 @@ acs_spliter* acs_spliter_init(char *str)
     return o;
 }
 
+void acs_spliter_free(acs_spliter* self) {
+    free(self->s);
+    free(self);
+}
+
 char *acs_spliter_char(acs_spliter *self, char split)
 {
     char *o = malloc(self->sz);
